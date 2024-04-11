@@ -15,7 +15,7 @@
 }
 
 #login_form{
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(241, 238, 238);
   display: flex;
   flex-direction: column;
   padding: 30px 40px;
@@ -41,7 +41,7 @@
   position: absolute;
   content: '';
   width: 40%;
-  background-color: purple;
+  background-color: rgb(122, 3, 122);
   height: 3px;
   bottom: 5px;
   border-radius: 5px;
@@ -60,7 +60,7 @@
 #social-midia img{
   width: 40%;
   align-items: center;
-  margin-left: 80px;
+  margin-left: 100px;
 }
 #social-midia img:hover{
   transform: scale(1.2);
@@ -75,19 +75,19 @@
 .input-box label{
   font-size: 14px;
   color: rgb(15, 15, 15);
-  curs
 }
 .input-field{
   display: flex;
-  align-items: center;
+  align-items:center;
   gap: 15px;
   padding: 3px;
   cursor: text;
-  border-bottom: 1px solid rgb(6, 6, 7);
+  border-bottom: 1px solid rgb(20, 20, 133);
+
 }
 .input-field i{
   font-size: 18px;
-  color: black;
+  color: rgb(15, 15, 15);
 }
 
 .input-field input{
@@ -105,7 +105,7 @@
 #forgot_password a{
   text-decoration: none;
   font-size: 12px;
-  color: black;
+  color: rgb(8, 8, 8);
 }
 
 #forgot_password a:hover{
@@ -114,8 +114,8 @@
 
 #login_button{
   border:none;
-  background-color: red;
-  color: black;
+  background: linear-gradient(90deg, rgba(128, 1, 128, 0.623), rgba(2, 2, 129, 0.904));
+  color: rgb(8, 8, 8);
   padding: 7px;
   font-size: 18px;
   border-radius: 7px;
@@ -133,9 +133,20 @@
   animation: light-to-dark 0.3s  ease-in-out;
 }
 
-.dark#login_form .input-field inputt,
+.dark#login_form .input-box label{
+  color: rgb(253, 252, 252);
+}
+
 .dark#login_form .input-field i{
-  color: #fff;
+  color: #f3ecec;
+}
+.dark#login_form .input-field input{
+  border: none;
+  background-color: transparent;
+  color: #ffff;
+  width:260px;
+  font-size: 18px;
+  padding: 0px 5px;
 }
 
 @keyframes light-to-dark {
@@ -145,16 +156,11 @@
   100%{
     background-color: #fff;
   }
-  
-  
 }
-
-
-
 
 @keyframes light-to-dark {
   0%{
-    background-color: #fff;
+    background-color: #ffff;
   }
   100%{
     background-color: black;
