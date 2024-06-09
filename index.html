@@ -9,57 +9,142 @@
 </head>
 <body>
     <main id="container">
-        <form id="login_form">
-            <div id="form_header">
-                <h1>Login</h1>
-                <i id= "mode_icon" class="fa-solid fa-moon"></i>
-            </div>
+        <div id="space_login">
 
-            <div id="social-midia">
-                <a href="#">
-                    <img src="src/image/images-removebg-preview (1).png">
-                </a>
-            </div>
-            <div id="inputs">
-                <div class="input-box">
-                    <label for="name">
-                        Nome
-                        <div class="input-field">
-                            <i class="fa-solid fa-user"></i>
-                            <input type="text" id="name" name="name">
-                        </div>
-                    </label>
+            <form id="login_form">
+                <div id="form_header">
+                    <h1>Login</h1>
+                    <i id= "mode_icon" class="fa-solid fa-moon"></i>
                 </div>
     
-                <div class="input-box">
-                    <label for="email">
-                        Email
-                        <div class="input-field">
-                            <i class="fa-solid fa-envelope"></i>
-                            <input type="text" id="email" name="email">
-                        </div>
-                    </label>
+                <div id="social-midia">
+                    <a href="#">
+                        <img src="src/image/images-removebg-preview (1).png">
+                    </a>
                 </div>
-    
-                <div class="input-box">
-                    <label for="password">
-                        Senha
-                        <div class="input-field">
-                            <i class="fa-solid fa-key"></i>
-                            <input type="password" id="password" name="password">
-                        </div>
-                    </label>
-    
-                    <div id="forgot_password">
-                        Esqueceu sua senha ?
+                <div id="inputs">
+                    <div class="input-box">
+                        <label for="name">
+                            Nome
+                            <div class="input-field">
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" id="name" name="name">
+                            </div>
+                        </label>
                     </div>
-    
+        
+                    <div class="input-box">
+                        <label for="email">
+                            Email
+                            <div class="input-field">
+                                <i class="fa-solid fa-envelope"></i>
+                                <input type="text" id="email" name="email">
+                            </div>
+                        </label>
+                    </div>
+        
+                    <div class="input-box">
+                        <label for="password">
+                            Senha
+                            <div class="input-field">
+                                <i class="fa-solid fa-key"></i>
+                                <input type="password" id="password" name="password">
+                            </div>
+                        </label>
+        
+                        <div id="forgot_password">
+                            Esqueceu sua senha ?
+                        </div>
+        
+                    </div>
                 </div>
-            </div>
-           <button type="submit" id="login_button">
-            Login
-           </button>
-        </form>
+               <button type="submit" id="login_button" content-id="space_list">
+                Login
+               </button>
+            </form>
+        </div>
+        <div id="space_list show">
+            <form id="user_list">
+                <div id="list_header">
+                    <h1>List of Users</h1>
+                    <i id= "mode_icon" class="fa-solid fa-moon"></i>
+                </div>
+                
+                <div class="inputs_list">
+                    <div class="input-box">
+                        <label for="name">
+                            <div class="input-field">
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" id="name" name="name">
+                            </div>
+                        </label>
+                        <label for="email">
+                            Email
+                            <div class="input-field">
+                                <input type="text" id="email" name="email">
+                            </div>
+                        </label>
+                        <label for="password">
+                            Senha
+                            <div class="input-field">
+                                <input type="password" id="password" name="password">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="input-box">
+                        <label for="name">
+                            <div class="input-field">
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" id="name" name="name">
+                            </div>
+                        </label>
+                        <label for="email">
+                            Email
+                            <div class="input-field">
+                                <input type="text" id="email" name="email">
+                            </div>
+                        </label>
+                        <label for="password">
+                            Senha
+                            <div class="input-field">
+                                <input type="password" id="password" name="password">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="input-box">
+                        <label for="name">
+                            <div class="input-field">
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" id="name" name="name">
+                            </div>
+                        </label>
+                        <label for="email">
+                            Email
+                            <div class="input-field">
+                                <input type="text" id="email" name="email">
+                            </div>
+                        </label>
+                        <label for="password">
+                            Senha
+                            <div class="input-field">
+                                <input type="password" id="password" name="password">
+                            </div>
+                        </label>
+                    </div>
+
+                </div>
+                <div class="buttons">
+                    <button type="submit" id="return_button" content-id="space_login">
+                        Home
+                    </button>
+
+                    <button type="submit" id="delete_button">
+                        Delete
+                    </button>
+                </div>
+            </form>
+        </div>
+       
     </main>
     <script src="src/javascript/script.js"></script>
 </body>
