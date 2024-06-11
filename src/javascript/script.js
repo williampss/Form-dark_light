@@ -1,25 +1,15 @@
-const mode = document.getElementById('mode_icon');
-mode.addEventListener('click', () =>{
-    const form = document.getElementById('login_form');
-    const list = document.getElementById('user_list');
+document.getElementById('mode_icon').addEventListener('click', () => {
+    const modeIcon = document.getElementById('mode_icon');
+    const forms = document.querySelectorAll('form');
 
-    if(mode.classList.contains('fa-moon')){
-        mode.classList.remove('fa-moon');
-        mode.classList.add('fa-sun');
-
-        form.classList.add('dark');
-        list.classList.add('dark');
-
-        return;
+    if (modeIcon.classList.contains('fa-moon')) {
+        modeIcon.classList.replace('fa-moon', 'fa-sun');
+    } else {
+        modeIcon.classList.replace('fa-sun', 'fa-moon');
     }
 
-    mode.classList.add('fa-moon');
-    mode.classList.remove('fa-mun');
-    form.classList.remove('dark');
-    list.classList.remove('dark')
-
-})
-
+    forms.forEach(form => form.classList.toggle('dark'));
+});
 
 
 
